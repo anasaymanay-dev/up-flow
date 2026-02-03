@@ -285,6 +285,11 @@ header .container nav ul li a:hover::before {
         padding: 20px 40px;
     }
 }
+@media (max-width: 991px) {
+    .home-page .container .links {
+        display: none;
+    }
+}
 /* end home page */
 /* start cards flow */
 .cards-flow {
@@ -522,7 +527,7 @@ header .container nav ul li a:hover::before {
 }
 .projects .boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(365px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap: 30px;
 }
 .projects .boxes .box {
